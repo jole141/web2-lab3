@@ -21,7 +21,7 @@ function startGame() {
 }
 
 var myGameArea = {
-    canvas : document.createElement("canvas"),
+    canvas : document.getElementById("myCanvas"),
     start : function() {
         this.canvas.id = "myCanvas";
         this.canvas.width = canvasWidth;
