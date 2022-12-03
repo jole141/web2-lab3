@@ -77,9 +77,7 @@
                 ctx.restore();
             }
             this.onclick = function() {
-                if (brojPogodenih < rectagnles.length) {
-                    brojPogodenih++;
-                }
+                brojPogodenih++;
                 var index = rectagnles.indexOf(this);
                 if (index > -1) {
                     rectagnles.splice(index, 1);
