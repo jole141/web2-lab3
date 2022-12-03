@@ -23,11 +23,10 @@ function startGame() {
 var myGameArea = {
     canvas : document.getElementById("myCanvas"),
     start : function() {
-        this.canvas.id = "myCanvas";
+        this.context = this.canvas.getContext("2d");
         this.canvas.width = canvasWidth;
         this.canvas.height = canvasHeight;
         this.canvas.style.border = "1px solid";
-        this.context = this.canvas.getContext("2d");
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         this.frameNo = 0;
         this.interval = setInterval(updateGameArea, 20);
